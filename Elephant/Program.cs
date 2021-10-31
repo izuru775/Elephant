@@ -31,6 +31,16 @@ namespace Elephant
                     lucinda = holder;
                     Console.WriteLine("Reference have been swapped");
                 }
+                else if (pressed =='4')
+                {
+                    lloyd = lucinda;
+                    lloyd.EarSize = 4321;
+                    lloyd.WhoAmI();
+                }
+                else if (pressed == '5')
+                {
+                    lucinda.SpeakTo(lloyd, "Hi, Lloyd!");
+                }
                 else return;
                 Console.WriteLine();
             }
